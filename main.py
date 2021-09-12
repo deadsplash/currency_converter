@@ -62,7 +62,13 @@ def converter(cur1, cur2, q):  # actual converter engine
     print(f'You will receive {result.__round__(2)} {cur2.upper()}')
 
 
-while True:  # made infinite loop for debugging and using as long as i want
+"""
+
+code below is just used as infinite loop to use as much as you want.
+you can implement this to your app with changing "while True:" to "if __name__ == '__main__':" construction
+
+"""
+while True:
     cur1 = str(input('You sell:  ')).lower()
     cur2 = str(input('You buy:  ')).lower()
     try:
@@ -72,4 +78,4 @@ while True:  # made infinite loop for debugging and using as long as i want
         break
     converter(cur1, cur2, q)
 
-# just remember to use currency code
+# just remember to use correct currency codes
